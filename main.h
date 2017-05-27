@@ -4,8 +4,8 @@
 typedef struct threadargs_t {
 	int tid;
 	int socket;
-	unsigned char** lines;
-	long* linelengths;
-	long numlines;
+	FILE *file;
+	off_t offset;
+	size_t datalen;
 } threadargs_t;
 #endif
